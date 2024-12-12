@@ -6,7 +6,7 @@ const isAuthenticated =async (req,res,next)=>{
     if(!token){
       return res.status(401).json({
         message:"User not Authenticated",
-        success:false
+        success:false,
       })
     }
     const decode =  jwt.verify(token, process.env.SECRET_KEY);
@@ -19,7 +19,7 @@ const isAuthenticated =async (req,res,next)=>{
     req.id = decode.userId;
     next();
   } catch (error) {
-    console.log(error)
+    console.log(error);
     
   }
 }
