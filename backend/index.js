@@ -38,6 +38,12 @@ app.use("/api/v1/application", applicationRoute);
 // app.get('*',(_,res)=>{
 //     res.sendFile(path.resolve(dirname,"frontend","dist","index.html"))
 // })
+
+app.get('/',(req,res) => {
+    res.json(
+        "server is running"
+    )
+})
 app.listen(PORT,()=>{
     connectDB();
     console.log(`Server running at port ${PORT}`);
