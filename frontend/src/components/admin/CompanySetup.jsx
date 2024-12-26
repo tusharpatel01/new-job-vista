@@ -75,7 +75,7 @@ const CompanySetup = () => {
     },[singleCompany]);
 
     return (
-        <div>
+        <div className='bg-customGray'>
             <Navbar />
             <div className='max-w-xl mx-auto my-10'>
                 <form onSubmit={submitHandler}>

@@ -19,7 +19,7 @@ const Companies = () => {
     },[input]);
     
     return (
-        <div>
+        <div className='bg-customGray min-h-screen'>
             <Navbar />
             <div className='  max-w-6xl mx-auto my-10 '>
                 <div className='gap-3 flex items-center justify-between my-5'>

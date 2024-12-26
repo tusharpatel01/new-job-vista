@@ -28,7 +28,7 @@ const ApplicantsTable = () => {
     }
 
     return (
-        <div>
+        <div className='bg-customGray'>
             <Table>
                 <TableCaption>A list of your recent applied user</TableCaption>
                 <TableHeader>
