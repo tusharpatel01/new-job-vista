@@ -18,7 +18,7 @@ const JobDescription = () => {
     const [isApplied, setIsApplied] = useState(isIntiallyApplied);
 
     const params = useParams();
-    const jobId = params.jobid;
+    const jobId = params.id;
     // console.log(jobId)
     const dispatch = useDispatch();
 // console.log(jobId)
